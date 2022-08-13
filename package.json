@@ -1,0 +1,22 @@
+{
+  "name": "ndaemy-blog",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "authors": {
+    "name": "ndaemy",
+    "email": "yuyaebean@gmail.com"
+  },
+  "repository": "/ndaemy-blog",
+  "engines": {
+    "node": "16"
+  },
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
