@@ -7,7 +7,7 @@
     "name": "ndaemy",
     "email": "yuyaebean@gmail.com"
   },
-  "repository": "/ndaemy-blog",
+  "repository": "https://github.com/ndaemy/ndaemy-blog",
   "engines": {
     "node": "16"
   },
