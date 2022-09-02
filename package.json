@@ -1,23 +1,10 @@
 {
-  "name": "ndaemy-blog",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "authors": {
-    "name": "ndaemy",
-    "email": "yuyaebean@gmail.com"
-  },
-  "repository": "https://github.com/ndaemy/ndaemy-blog",
-  "engines": {
-    "node": "16"
-  },
+  "packageManager": "yarn@3.2.3",
   "scripts": {
-    "dev": "vuepress dev src",
-    "build": "vuepress build src"
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
-  "license": "MIT",
   "devDependencies": {
-    "vuepress": "^1.5.3",
-    "vuepress-theme-modern-blog": "^2.12.1"
+    "vuepress": "next"
   }
 }

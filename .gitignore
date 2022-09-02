@@ -1,15 +1,19 @@
-pids
-logs
+# yarn berry
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
 node_modules
-npm-debug.log
-coverage/
-run
-dist
+
+# vuepress
+.temp
+.cache
+
+# misc
 .DS_Store
-.nyc_output
-.basement
-config.local.js
-basement_dist
 
 # jetbrains ide
 .idea
