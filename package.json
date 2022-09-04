@@ -5,6 +5,8 @@
     "docs:build": "vuepress build docs"
   },
   "devDependencies": {
+    "@vue/tsconfig": "^0.1.3",
+    "@vuepress/plugin-register-components": "next",
     "vuepress": "next"
   }
 }

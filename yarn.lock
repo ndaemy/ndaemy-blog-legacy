@@ -409,6 +409,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vue/tsconfig@npm:^0.1.3":
+  version: 0.1.3
+  resolution: "@vue/tsconfig@npm:0.1.3"
+  peerDependencies:
+    "@types/node": "*"
+  peerDependenciesMeta:
+    "@types/node":
+      optional: true
+  checksum: 8150a24497a5348bc342c27afb38ad989de2ce8e94c349020628065d2a8df6837cb8bb3012f9161eea716487832612ac71b5f910d95bac41539ac6021d6bd88d
+  languageName: node
+  linkType: hard
+
 "@vuepress/bundler-vite@npm:2.0.0-beta.51":
   version: 2.0.0-beta.51
   resolution: "@vuepress/bundler-vite@npm:2.0.0-beta.51"
@@ -606,6 +618,17 @@ __metadata:
     "@vuepress/core": 2.0.0-beta.51
     prismjs: ^1.28.0
   checksum: e30ac9245ae6f5a5a89bdf849d3de5739870260621894affef55de4512f8f5bc0f4564ea8de5fce101a170633af6e955c70bec28607e39d8ce591d4cf5d26d8a
+  languageName: node
+  linkType: hard
+
+"@vuepress/plugin-register-components@npm:next":
+  version: 2.0.0-beta.51
+  resolution: "@vuepress/plugin-register-components@npm:2.0.0-beta.51"
+  dependencies:
+    "@vuepress/core": 2.0.0-beta.51
+    "@vuepress/utils": 2.0.0-beta.51
+    chokidar: ^3.5.3
+  checksum: fd7084fc3ca65518fd609d43ea8927625503e80175d6c4e1b8b21b5868d96e4f2e6c623021b5567794e8cfcc7ac9674bb96d1a71773210a17ca6d0ff55372f17
   languageName: node
   linkType: hard
 
@@ -2702,6 +2725,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
+    "@vue/tsconfig": ^0.1.3
+    "@vuepress/plugin-register-components": next
     vuepress: next
   languageName: unknown
   linkType: soft
