@@ -1,6 +1,6 @@
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
 import { getDirname, path } from '@vuepress/utils'
-import { defineUserConfig } from 'vuepress'
+import { defaultTheme, defineUserConfig } from 'vuepress'
 
 const __dirname = getDirname(import.meta.url)
 
@@ -12,5 +12,17 @@ export default defineUserConfig({
     registerComponentsPlugin({
       componentsDir: path.resolve(__dirname, './components'),
     }),
-  ]
+  ],
+  theme: defaultTheme({
+    navbar: [
+      {
+        text: 'Home',
+        link: '/',
+      },
+      {
+        text: 'About',
+        link: '/about',
+      },
+    ],
+  }),
 })
