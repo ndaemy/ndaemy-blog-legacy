@@ -24,6 +24,8 @@ export default defineUserConfig({
         link: '/about',
       },
     ],
+    colorMode: "dark",
+    colorModeSwitch: false,
     lastUpdated: false,
     contributors: false,
   }),
