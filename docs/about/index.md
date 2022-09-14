@@ -59,4 +59,4 @@ Frontend Engineer (2020.11 ~ Current)
 
 [멋쟁이사자처럼](https://www.instagram.com/likelion.univ/)은 코딩 교육 전국연합 동아리입니다.
 [멋쟁이사자처럼 명지대학교](https://www.instagram.com/mju_likelion/)에 2019년에 처음 들어와, 2번의 대표와 1번의 운영진 활동을 했습니다.
-온라인 강의 커리큘럼 구성 및 녹화, 현장강의 진행, 해커톤 멘토링 등을 진행하고 있습니다.
+온라인 강의 커리큘럼 구성 및 녹화 · 현장강의 진행, 해커톤 멘토링 등을 진행하고 있습니다.
