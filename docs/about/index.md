@@ -6,8 +6,8 @@
 
 Frontend Engineer (2020.11 ~ Current)
 
-- 왓챠피디아 UI/UX 고도화
-- 왓챠피디아 각종 신규 피쳐 개발
+- 왓챠 UI/UX 고도화 및 신규 피쳐 개발
+- 왓챠피디아 UI/UX 고도화 및 신규 피쳐 개발
 - 왓챠벨 이벤트 페이지 기획 및 개발
 
 ## Projects
