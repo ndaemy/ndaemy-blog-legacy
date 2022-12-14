@@ -52,8 +52,5 @@
     "astro-boilerplate-components": "^1.0.9",
     "date-fns": "^2.29.3"
   },
-  "volta": {
-    "node": "16.15.1"
-  },
   "author": "Ixartz (https://github.com/ixartz)"
 }
