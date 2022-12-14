@@ -1,0 +1,7 @@
+{
+  "plugins": ["prettier-plugin-astro"],
+  "arrowParens": "avoid",
+  "jsxSingleQuote": true,
+  "semi": true,
+  "singleQuote": true
+}
