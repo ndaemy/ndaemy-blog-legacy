@@ -1,5 +1,5 @@
 {
-  "name": "astro-boilerplate",
+  "name": "ndaemy-blog",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -52,5 +52,5 @@
     "astro-boilerplate-components": "^1.0.9",
     "date-fns": "^2.29.3"
   },
-  "author": "Ixartz (https://github.com/ixartz)"
+  "author": "ndaemy <yuyaebean@gmail.com> (https://github.com/ndaemy)"
 }
