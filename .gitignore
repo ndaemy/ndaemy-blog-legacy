@@ -20,3 +20,7 @@ pnpm-debug.log*
 # misc
 *.pem
 Thumbs.db
+
+# code editors and IDEs
+.idea/
+.vscode/
