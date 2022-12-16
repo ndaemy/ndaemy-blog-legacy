@@ -1,69 +1,27 @@
-import {
-  GradientText,
-  HeroAvatar,
-  HeroSocial,
-  Section,
-} from 'astro-boilerplate-components';
+import { GradientText } from '@/components/GradientText';
+import { Section } from '@/components/Section';
 
-const Hero = () => (
+export const Hero = () => (
   <Section>
-    <HeroAvatar
-      title={
-        <>
-          Hi there, I'm <GradientText>Ixartz</GradientText> 👋
-        </>
-      }
-      description={
-        <>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus{' '}
-          <a className='text-cyan-400 hover:underline' href='/'>
-            malesuada
-          </a>{' '}
-          nisi tellus, non imperdiet nisi tempor at. Lorem ipsum dolor sit amet,{' '}
-          <a className='text-cyan-400 hover:underline' href='/'>
-            consectetur
-          </a>{' '}
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
-        </>
-      }
-      avatar={
+    <div className='flex flex-col items-center md:flex-row md:justify-between md:gap-x-6'>
+      <div>
+        <h1 className='text-3xl font-bold leading-normal'>
+          개발로 먹고살고 있는 <GradientText>유예빈</GradientText>입니다 👋
+        </h1>
+        <p className='mt-4 text-xl leading-9'>
+          서비스를 기획하고 만드는 것에 재미를 느껴, 직접 처음부터 끝까지 만들
+          수 있는 기술을 가지기 위해 노력하는 개발자입니다. 열정있는 사람들과
+          뭔가 하는 것에도 흥미가 있어 이런저런 활동도 많이 하는 사람입니다.
+        </p>
+      </div>
+      <div className='shrink-0'>
         <img
-          className='h-80 w-64'
-          src='/assets/images/avatar.svg'
-          alt='Avatar image'
+          className='h-auto w-64 sm:h-80 sm:w-auto'
+          src='/assets/images/avatar.png'
+          alt='Avatar'
           loading='lazy'
         />
-      }
-      socialButtons={
-        <>
-          <a href='/'>
-            <HeroSocial
-              src='/assets/images/twitter-icon.png'
-              alt='Twitter icon'
-            />
-          </a>
-          <a href='/'>
-            <HeroSocial
-              src='/assets/images/facebook-icon.png'
-              alt='Facebook icon'
-            />
-          </a>
-          <a href='/'>
-            <HeroSocial
-              src='/assets/images/linkedin-icon.png'
-              alt='Linkedin icon'
-            />
-          </a>
-          <a href='/'>
-            <HeroSocial
-              src='/assets/images/youtube-icon.png'
-              alt='Youtube icon'
-            />
-          </a>
-        </>
-      }
-    />
+      </div>
+    </div>
   </Section>
 );
-
-export { Hero };
