@@ -6,7 +6,7 @@ export const Navbar = () => (
     <div className='flex flex-col items-center gap-y-2 sm:flex-row sm:justify-between'>
       <a href='/' className='py-2'>
         <div className='flex items-center bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-xl font-bold text-transparent'>
-          {AppConfig.site_name}
+          {AppConfig.siteName}
         </div>
       </a>
 
