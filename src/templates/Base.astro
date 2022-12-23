@@ -1,6 +1,7 @@
 ---
 import { Footer } from '@/partials/Footer';
 import { Navbar } from '@/partials/Navbar';
+import GlobalStyles from '@/styles/GlobalStyles.astro';
 import { AppConfig } from '@/utils/AppConfig';
 
 export interface Props {
@@ -25,6 +26,8 @@ const {
 
     <link rel='alternate' type='application/rss+xml' href='/rss.xml' />
     <link rel='icon' type='image/x-icon' href='/favicon.ico' />
+
+    <GlobalStyles />
   </head>
   <body class='bg-slate-900 text-gray-100'>
     <Navbar />
