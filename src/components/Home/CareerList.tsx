@@ -14,5 +14,9 @@ export const CareerList: FC = () => (
       duration='2020.05 - 2020.10'
       title='INNOVALUE Partners 책임연구원 / React Native 강사'
     />
+    <ListItem
+      duration='2019.12 - 2020.02'
+      title='한양대학교 부동산융합대학원 원우회 앱 개발'
+    />
   </ul>
 );
