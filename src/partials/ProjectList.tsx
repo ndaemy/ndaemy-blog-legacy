@@ -1,71 +1,34 @@
-import {
-  ColorTags,
-  GradientText,
-  Project,
-  Section,
-  Tags,
-} from 'astro-boilerplate-components';
+import { GradientText } from '@/components/GradientText';
+import { Project } from '@/components/Home/Project';
+import { Section } from '@/components/Section';
+import { TechBadge } from '@/components/TechBadge';
+import { Title } from '@/components/Title';
 
-const ProjectList = () => (
-  <Section
-    title={
-      <>
-        Recent <GradientText>Projects</GradientText>
-      </>
-    }
-  >
+export const ProjectList = () => (
+  <Section>
+    <Title>
+      Recent <GradientText>Projects</GradientText>
+    </Title>
     <div className='flex flex-col gap-6'>
       <Project
-        name='Project 1'
-        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        bibendum. Nunc non posuere consectetur, justo erat semper enim, non
-        hendrerit dui odio id enim.'
-        link='/'
+        name='Mission24 연합해커톤 홍보/안내 페이지 제작'
+        description='2022 멋쟁이사자처럼 경기남부연합 해커톤 홍보 및 안내 페이지를 제작했습니다.'
+        link='https://mission24.link'
         img={{
-          src: '/assets/images/project-web-design.png',
-          alt: 'Project Web Design',
+          src: '/assets/images/project-mission24.png',
+          alt: 'Mission24 Flag Icon',
         }}
         category={
           <>
-            <Tags color={ColorTags.FUCHSIA}>Astro.js</Tags>
-            <Tags color={ColorTags.LIME}>Web design</Tags>
-            <Tags color={ColorTags.SKY}>Tailwind.css</Tags>
-            <Tags color={ColorTags.ROSE}>TypeScript</Tags>
-          </>
-        }
-      />
-      <Project
-        name='Project 2'
-        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        bibendum. Nunc non posuere consectetur, justo erat semper enim, non
-        hendrerit dui odio id enim.'
-        link='/'
-        img={{ src: '/assets/images/project-fire.png', alt: 'Project Fire' }}
-        category={
-          <>
-            <Tags color={ColorTags.VIOLET}>Next.js</Tags>
-            <Tags color={ColorTags.EMERALD}>Blog</Tags>
-            <Tags color={ColorTags.YELLOW}>JavaScript</Tags>
-          </>
-        }
-      />
-      <Project
-        name='Project 3'
-        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        bibendum. Nunc non posuere consectetur, justo erat semper enim, non
-        hendrerit dui odio id enim.'
-        link='/'
-        img={{ src: '/assets/images/project-maps.png', alt: 'Project Maps' }}
-        category={
-          <>
-            <Tags color={ColorTags.FUCHSIA}>Astro.js</Tags>
-            <Tags color={ColorTags.INDIGO}>Bootstrap</Tags>
-            <Tags color={ColorTags.ROSE}>TypeScript</Tags>
+            <TechBadge name='TypeScript' />
+            <TechBadge name='React' />
+            <TechBadge name='Next.js' />
+            <TechBadge name='Strapi' />
+            <TechBadge name='Vercel' />
+            <TechBadge name='Lightsail' />
           </>
         }
       />
     </div>
   </Section>
 );
-
-export { ProjectList };
