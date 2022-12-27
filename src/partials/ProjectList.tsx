@@ -2,13 +2,15 @@ import { GradientText } from '@/components/GradientText';
 import { Project } from '@/components/Home/Project';
 import { Section } from '@/components/Section';
 import { TechBadge } from '@/components/TechBadge';
-import { Title } from '@/components/Title';
 
 export const ProjectList = () => (
-  <Section>
-    <Title>
-      Recent <GradientText>Projects</GradientText>
-    </Title>
+  <Section
+    title={
+      <>
+        Recent <GradientText>Projects</GradientText>
+      </>
+    }
+  >
     <div className='flex flex-col gap-6'>
       <Project
         name='Mission24 연합해커톤 홍보/안내 페이지 제작'
