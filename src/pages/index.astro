@@ -1,8 +1,8 @@
 ---
 import { CareersAndActivities } from '@/partials/CareersAndActivities';
 import { Hero } from '@/partials/Hero';
-import { ProjectList } from '@/partials/ProjectList';
-import { RecentPosts } from '@/partials/RecentPosts';
+import { Posts } from '@/partials/Posts';
+import { Projects } from '@/partials/Projects';
 import Base from '@/templates/Base.astro';
 import type { Frontmatter } from '@/types';
 import { AppConfig } from '@/utils/AppConfig';
@@ -19,6 +19,6 @@ const { description } = AppConfig;
 <Base head={{ title, description }}>
   <Hero />
   <CareersAndActivities />
-  <ProjectList />
-  <RecentPosts postList={lastThreePosts} />
+  <Projects />
+  <Posts postList={lastThreePosts} />
 </Base>

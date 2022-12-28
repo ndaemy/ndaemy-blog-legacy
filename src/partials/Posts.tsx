@@ -10,16 +10,16 @@ type Props = {
   postList: MarkdownInstance<Frontmatter>[];
 };
 
-export const RecentPosts: FC<Props> = ({ postList }) => (
+export const Posts: FC<Props> = ({ postList }) => (
   <Section
     title={
       <div className='flex items-baseline justify-between'>
         <div>
-          Recent <GradientText>Posts</GradientText>
+          <GradientText>Posts</GradientText>
         </div>
 
         <div className='text-sm'>
-          <a href='/posts'>View all Posts →</a>
+          <a href='/posts'>모든 포스트 보러가기 →</a>
         </div>
       </div>
     }
