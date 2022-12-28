@@ -14,7 +14,7 @@ export const Navbar = () => (
         <ul className='flex gap-x-3 font-medium text-gray-200'>
           <li>
             <a href='/posts' className='rounded px-3 py-2 hover:bg-slate-800'>
-              Blogs
+              Blog
             </a>
           </li>
           <li>
