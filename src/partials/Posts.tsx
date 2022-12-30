@@ -18,9 +18,11 @@ export const Posts: FC<Props> = ({ postList }) => (
           <GradientText>Posts</GradientText>
         </div>
 
-        <div className='text-sm'>
-          <a href='/posts'>모든 포스트 보러가기 →</a>
-        </div>
+        {!!postList.length && (
+          <div className='text-sm'>
+            <a href='/posts'>모든 포스트 보러가기 →</a>
+          </div>
+        )}
       </div>
     }
   >
