@@ -1,4 +1,5 @@
 ---
+import type { MarkdownInstance } from 'astro';
 import { CareersAndActivities } from '@/partials/CareersAndActivities';
 import { Hero } from '@/partials/Hero';
 import { Posts } from '@/partials/Posts';
@@ -8,9 +9,16 @@ import type { Frontmatter } from '@/types';
 import { AppConfig } from '@/utils/AppConfig';
 import { sortByDate } from '@/utils/Posts';
 
-const allPosts = await Astro.glob<Frontmatter>('./posts/*.md');
-const sortedPosts = sortByDate(allPosts);
-const lastThreePosts = sortedPosts.slice(0, 3);
+let lastThreePosts: MarkdownInstance<Frontmatter>[] = [];
+
+try {
+  const allPosts = await Astro.glob<Frontmatter>('./posts/*.md');
+  const sortedPosts = sortByDate(allPosts);
+  lastThreePosts = sortedPosts.slice(0, 3);
+} catch (e) {
+  console.error(e);
+  lastThreePosts = [];
+}
 
 const { title } = AppConfig;
 const { description } = AppConfig;
