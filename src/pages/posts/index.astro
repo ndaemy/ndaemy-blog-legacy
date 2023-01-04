@@ -1,0 +1,29 @@
+---
+import { MarkdownInstance } from 'astro';
+
+import { BlogHeader } from '@/partials/Blog/BlogHeader';
+import { Posts } from '@/partials/Blog/Posts';
+import Base from '@/templates/Base.astro';
+import { AppConfig } from '@/utils/AppConfig';
+import { sortByDate } from '@/utils/Posts';
+import type { Frontmatter } from '@/types';
+
+let sortedPosts: MarkdownInstance<Frontmatter>[] = [];
+
+try {
+  const allPosts = await Astro.glob<Frontmatter>('./*.md');
+  sortedPosts = sortByDate(allPosts);
+} catch (e) {
+  console.error(e);
+}
+
+const titleSuffix = ` | ${AppConfig.siteName}`;
+const titleBase = 'Blog';
+const title = titleBase + titleSuffix;
+const { description } = AppConfig;
+---
+
+<Base head={{ title, description }}>
+  <BlogHeader />
+  <Posts postList={sortedPosts} />
+</Base>
