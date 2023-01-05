@@ -50,6 +50,11 @@ const isDev = import.meta.env.DEV;
       } else {
         gtag('config', GA_ID);
       }
+
+      gtag('event', 'n_view', {
+        n_path: window.location.pathname,
+        n_referrer: document.referrer,
+      });
     </script>
 
     <GlobalStyles />
