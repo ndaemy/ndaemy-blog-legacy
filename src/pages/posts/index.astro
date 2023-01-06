@@ -14,7 +14,7 @@ try {
   const allPosts = await Astro.glob<Frontmatter>('./*.md');
   sortedPosts = sortByDate(allPosts);
 } catch (e) {
-  console.error(e);
+  // console.error(e);
 }
 
 const titleSuffix = ` | ${AppConfig.siteName}`;
