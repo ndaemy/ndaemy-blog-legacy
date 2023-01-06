@@ -1,7 +1,6 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@astrojs/partytown': ^1.0.2
   '@astrojs/react': ^0.1.3
   '@astrojs/rss': ^0.2.2
   '@astrojs/sitemap': ^0.1.2
@@ -45,7 +44,6 @@ dependencies:
   date-fns: 2.29.3
 
 devDependencies:
-  '@astrojs/partytown': 1.0.2
   '@astrojs/react': 0.1.3_biqbaboplfbrettd7655fr4n2y
   '@astrojs/rss': 0.2.2
   '@astrojs/sitemap': 0.1.2
@@ -165,13 +163,6 @@ packages:
       micromark-util-types: 1.0.2
       uvu: 0.5.6
       vfile-message: 3.1.3
-
-  /@astrojs/partytown/1.0.2:
-    resolution: {integrity: sha512-+pUjLxdp0SYqUO+X+FjFN95KxK7w4Rs5gIMQ7scKUWd2073D3/5hTlij9qNmX5Bk/tFHUfTivKIZ5p233Lpa9Q==}
-    dependencies:
-      '@builder.io/partytown': 0.7.3
-      mrmime: 1.0.1
-    dev: true
 
   /@astrojs/prism/1.0.2:
     resolution: {integrity: sha512-o3cUVoAuALDqdN5puNlsN2eO4Yi1kDh68YO8V7o6U4Ts+J/mMayzlJ7JsgYAmob0xrf/XnADVgu8khfMv/w3uA==}
@@ -479,11 +470,6 @@ packages:
       '@babel/helper-string-parser': 7.19.4
       '@babel/helper-validator-identifier': 7.19.1
       to-fast-properties: 2.0.0
-
-  /@builder.io/partytown/0.7.3:
-    resolution: {integrity: sha512-hA6WYBFD/exyrEvs0JSvQIILfH0/Jlr5amqE3lt1nPehCus+eQm4ob3LBMRkSaFDWz9clHSLtsGwG52dUjGy3g==}
-    hasBin: true
-    dev: true
 
   /@emmetio/abbreviation/2.2.3:
     resolution: {integrity: sha512-87pltuCPt99aL+y9xS6GPZ+Wmmyhll2WXH73gG/xpGcQ84DRnptBsI2r0BeIQ0EB/SQTOe2ANPqFqj3Rj5FOGA==}
