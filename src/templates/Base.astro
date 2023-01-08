@@ -40,6 +40,7 @@ const isDev = import.meta.env.DEV;
         dataLayer.push(arguments);
       }
       gtag('js', new Date());
+      window.gtag = gtag;
       if (isDev) {
         gtag('config', GA_ID, {
           debug_mode: true,
@@ -56,7 +57,7 @@ const isDev = import.meta.env.DEV;
     <GlobalStyles />
   </head>
   <body class='bg-slate-900 text-gray-100'>
-    <Navbar />
+    <Navbar client:load />
 
     <slot />
 
