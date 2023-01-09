@@ -3,8 +3,6 @@ import { AppConfig } from '@/utils/AppConfig';
 
 export const Navbar = () => {
   const onClick: (target: string) => React.MouseEventHandler = target => () => {
-    // TODO: 추후 타입 선언 필요
-    // @ts-expect-error
     window.gtag('event', 'n_click', {
       n_path: '/navbar',
       n_target: target,
