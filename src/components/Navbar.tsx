@@ -2,10 +2,13 @@ import { Section } from '@/components/Section';
 import { AppConfig } from '@/utils/AppConfig';
 
 export const Navbar = () => {
-  const onClick: (target: string) => React.MouseEventHandler = target => () => {
+  type OnClick = (target: string) => React.MouseEventHandler<HTMLAnchorElement>;
+
+  const onClick: OnClick = target => e => {
     window.gtag('event', 'n_click', {
       n_path: '/navbar',
       n_target: target,
+      n_link: (e.target as HTMLAnchorElement).href,
     });
   };
 
