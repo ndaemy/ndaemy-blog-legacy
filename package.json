@@ -2,6 +2,12 @@
   "name": "ndaemy-blog",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://ndaemy.dev",
+  "author": {
+    "name": "ndaemy",
+    "email": "yuyaebean@gmail.com",
+    "url": "https://github.com/ndaemy"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -51,6 +57,5 @@
     "astro": "^1.6.15",
     "astro-boilerplate-components": "^1.0.9",
     "date-fns": "^2.29.3"
-  },
-  "author": "ndaemy <yuyaebean@gmail.com> (https://github.com/ndaemy)"
+  }
 }
