@@ -1,6 +1,8 @@
 import type { FC } from 'react';
 
+import JavaScript from '@/images/icons/JavaScript.svg';
 import Lightsail from '@/images/icons/Lightsail.svg';
+import Netlify from '@/images/icons/Netlify.svg';
 import Nextjs from '@/images/icons/Next.js.svg';
 import React from '@/images/icons/React.svg';
 import Strapi from '@/images/icons/Strapi.svg';
@@ -8,10 +10,20 @@ import TypeScript from '@/images/icons/TypeScript.svg';
 import Vercel from '@/images/icons/Vercel.svg';
 
 const TECH_INFO = {
+  JavaScript: {
+    color: '#111827',
+    bgColor: '#f7df1e',
+    icon: JavaScript,
+  },
   Lightsail: {
     color: '#f3f4f6',
     bgColor: '#232f3e',
     icon: Lightsail,
+  },
+  Netlify: {
+    color: '#111827',
+    bgColor: '#00c7b7',
+    icon: Netlify,
   },
   'Next.js': {
     color: '#f3f4f6',

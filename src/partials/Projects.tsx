@@ -25,6 +25,22 @@ export const Projects = () => (
           </>
         }
       />
+      <Project
+        name='멋쟁이사자처럼 명지대(자연) 공식 페이지 제작'
+        description='멋쟁이사자처럼 명지대(자연) 홍보를 위해 기존 페이지를 개편했습니다.'
+        link='https://mju-likelion.org'
+        img={{
+          src: '/assets/images/project-link.png',
+          alt: 'Link Icon',
+        }}
+        category={
+          <>
+            <TechBadge name='JavaScript' />
+            <TechBadge name='React' />
+            <TechBadge name='Netlify' />
+          </>
+        }
+      />
     </div>
   </Section>
 );
