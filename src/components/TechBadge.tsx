@@ -2,6 +2,7 @@ import type { FC } from 'react';
 
 import JavaScript from '@/images/icons/JavaScript.svg';
 import Lightsail from '@/images/icons/Lightsail.svg';
+import NestJS from '@/images/icons/NestJS.svg';
 import Netlify from '@/images/icons/Netlify.svg';
 import Nextjs from '@/images/icons/Next.js.svg';
 import React from '@/images/icons/React.svg';
@@ -19,6 +20,11 @@ const TECH_INFO = {
     color: '#f3f4f6',
     bgColor: '#232f3e',
     icon: Lightsail,
+  },
+  NestJS: {
+    color: '#f3f4f6',
+    bgColor: '#e0234e',
+    icon: NestJS,
   },
   Netlify: {
     color: '#111827',
