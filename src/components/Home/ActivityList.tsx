@@ -5,6 +5,10 @@ import { ListItem } from './ListItem';
 export const ActivityList: FC = () => (
   <ul>
     <ListItem
+      duration='2023.01 - Current'
+      title='멋쟁이사자처럼 명지대(자연) 11기 운영진'
+    />
+    <ListItem
       duration='2022.01 - 2022.12'
       title='멋쟁이사자처럼 명지대 10기 대표'
     />

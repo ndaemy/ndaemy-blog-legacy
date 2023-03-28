@@ -25,6 +25,42 @@ export const Projects = () => (
           </>
         }
       />
+      <Project
+        name='멋쟁이사자처럼 명지대(자연) 공식 사이트 제작'
+        description='멋쟁이사자처럼 명지대(자연) 홍보를 위해 기존 페이지를 개편했습니다.'
+        link='https://mju-likelion.org'
+        img={{
+          src: '/assets/images/project-link.png',
+          alt: 'Link Icon',
+        }}
+        category={
+          <>
+            <TechBadge name='JavaScript' />
+            <TechBadge name='React' />
+            <TechBadge name='Netlify' />
+          </>
+        }
+      />
+      <Project
+        name='멋쟁이사자처럼 명지대(자연) 11기 지원 사이트 제작'
+        description='멋쟁이사자처럼 명지대(자연) 11기 지원을 받기 위해 지원 사이트를 만들었습니다.'
+        link='https://apply.mju-likelion.org'
+        img={{
+          src: '/assets/images/project-bookmark-fav.png',
+          alt: 'Favorite Bookmark Icon',
+        }}
+        category={
+          <>
+            <TechBadge name='JavaScript' />
+            <TechBadge name='TypeScript' />
+            <TechBadge name='React' />
+            <TechBadge name='Next.js' />
+            <TechBadge name='NestJS' />
+            <TechBadge name='Netlify' />
+            <TechBadge name='Lightsail' />
+          </>
+        }
+      />
     </div>
   </Section>
 );
